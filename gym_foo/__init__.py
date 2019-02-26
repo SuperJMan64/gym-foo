@@ -1,13 +1,2 @@
-from gym.envs.registration import register
+from gym_foo.envs.foo_env import FooEnv
 
-logger = logging.getLogger(__name__)
-
-register(
-    id='foo-v0',
-    entry_point='gym_foo.envs:FooEnv',
-)
-
-register(
-    id='foo-extrahard-v0',
-    entry_point='gym_foo.envs:FooExtraHardEnv',
-)
